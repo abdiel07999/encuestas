@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./helpers/head.ejs') %>
+<body>
+    
+    <!-- <img class="d-block w-100 object-fit-cover position-absolute" height="500" src="https://images.pexels.com/photos/1925536/pexels-photo-1925536.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen de banner"> -->
+
+    <main style="max-width: 500px; margin: auto;" class="container ">
+        <form class="card p-4 mt-5 pt-5 pb-5 shadow-lg" action="/auth" method="POST">
+            <fieldset>
+                <legend class="text-uppercase mb-4">Inicie sesión ¡ahora!</legend>
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Correo electronico</label>
+                    <input class="form-control" type="email" name="correo_electronico" id="email" placeholder="Ingresa tu correo electronico">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Contraseña</label>
+                    <input class="form-control" type="password" name="clave" id="contraseña" placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="submit" class="btn btn-info w-100 text-uppercase fs-5 mt-4">Iniciar Sesiòn</button>
+            </fieldset>
+            <a class="btn btn-outline-info w-100 text-uppercase fs-5 mt-3" href="/register">Crea tu cuenta <span class="fw-bold">¡Ahora!</span></a>
+        </form>
+    </main>
+
+</body>
+</html>

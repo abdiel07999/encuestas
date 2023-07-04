@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./helpers/head.ejs') %>
+<body>
+    
+    <!-- <img class="d-block w-100 object-fit-cover position-absolute" height="500" src="https://images.pexels.com/photos/1925536/pexels-photo-1925536.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Imagen de banner"> -->
+
+    <main class="container" style="max-width: 500px; margin: auto;">
+        <form class="card p-4 mt-5 pt-5 pb-5 shadow-lg" action="/register" method="POST">
+            <fieldset>
+                <legend class="text-uppercase mb-4">¿No tienes cuenta? <span class="fw-bold">¡Registrate!</span></legend>                
+                <div class="mb-3">
+                    <label for="nombre_usuario" class="form-label fw-bold">Nombre Completo</label>
+                    <input class="form-control" type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Ingresa tu correo electronico">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Correo electronico</label>
+                    <input class="form-control" type="email" name="correo_electronico" id="email" placeholder="Ingresa tu correo electronico">
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label fw-bold">Contraseña</label>
+                    <input class="form-control" type="password" name="clave" id="contraseña" placeholder="Ingresa tu contraseña">
+                </div>
+
+                <button type="submit" class="btn btn-info w-100 text-uppercase fs-5 mt-4">Registrar</button>
+                <a class="btn btn-outline-info w-100 text-uppercase fs-5 mt-3" href="/login">¿Ya tienes cuenta? <span class="fw-bold">¡Inicia sesión!</span></a>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>

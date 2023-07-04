@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./helpers/head.ejs') %>
+
+    <body class="">
+        <%- include('./helpers/navbar.ejs') %>
+
+            <main class="container mt-5">
+
+                <h1 class="text-uppercase text-center display-1">Examen Psicometrico</h1>
+                <p class="text-center mb-4 fs-3">Test estilos de aprendizaje</p>
+
+                <form id="test1">
+
+                    <!--NOTE PREGUNTA 1-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>1.- ¿Cuál de las siguientes actividades disfrutas más?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p1"> Escuchar música
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p1"> Ver películas
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p1"> Bailar con buena música
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 2-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>2.- ¿Qué programa de televisión prefieres?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p2"> Reportajes de descubrimientos y lugares
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p2"> Cómico y de entretenimiento
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p2"> Noticias del mundo
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 3-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>3.- Cuando conversas con otra persona, tú:</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p3"> La escuchas atentamente
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p3"> La observas
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p3"> Tiendes a tocarla
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 4-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>4.- Si pudieras adquirir uno de los siguientes artículos, ¿cuál elegirías?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p4"> Un jacuzzi
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p4"> Un estéreo
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p4"> Un televisor
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 5-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>5.- ¿Qué programa de televisión prefieres?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p5"> Reportajes de descubrimientos y lugares
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p5"> Cómico y de entretenimiento
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p5"> Noticias del mundo
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 6-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>6.- ¿Qué prefieres hacer un sábado por la tarde?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p6"> Quedarte en casa
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p6"> Ir a un concierto
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p6"> Ir al cine
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 7-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>7.- ¿Qué tipo de exámenes se te facilitan más?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p7"> Examen oral
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p7"> Examen escrito
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p7"> Examen de opción múltiple
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 8-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>8.- ¿Cómo te orientas más fácilmente?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p8"> Mediante el uso de un mapa
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p8"> Pidiendo indicaciones
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p8"> A través de la intuición
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 9-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>9.- ¿En qué prefieres ocupar tu tiempo en un lugar de descanso?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p9"> Pensar
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p9"> Caminar por los alrededores
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p9"> Descansar
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 10-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>10.- ¿Qué te halaga más?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p10"> Que te digan que tienes buen aspecto
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p10"> Que te digan que tienes un trato muy agradable
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p10"> Que te digan que tienes una conversación interesante
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 11-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>11.- ¿De qué manera se te facilita aprender algo?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p11"> Repitiendo en voz alta
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p11"> Escribiéndolo varias veces
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p11"> Relacionándolo con algo divertido
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--NOTE PREGUNTA 12-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>12.- ¿A qué evento preferirías asistir?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p12"> A una reunión social
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p12"> A una exposición de arte
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p12"> A una conferencia
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 13-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>13.- ¿De qué manera te formas una opinión de otras personas?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p13"> Por la sinceridad en su voz
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p13"> Por la forma de estrecharte la mano
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p13"> Por su aspecto
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 14-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>14.- ¿Cómo te consideras?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p14"> Atlético
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p14"> Intelectual
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p14"> Sociable
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 15-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>15.- ¿Qué tipo de películas te gustan más?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p15"> Clásicas
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p15"> De acción
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p15"> De amor
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 16-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>16.- ¿Cómo prefieres mantenerte en contacto con otra persona?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p16"> Por correo electrónico
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p16"> Tomando un café juntos
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p16"> Por teléfono
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 17-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>17.- ¿Cuál de las siguientes frases se identifican más contigo?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p17"> Me gusta que mi coche se sienta bien al conducirlo
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p17"> Percibo hasta el mas ligero ruido que hace mi coche
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p17"> Es importante que mi coche esté limpio por fuera y por dentro
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 18-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>18.- ¿Qué te halaga más?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p18"> Que te digan que tienes buen aspecto
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p18"> Que te digan que tienes un trato muy agradable
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p18"> Que te digan que tienes una conversación interesante
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 19-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>19.- ¿Cómo prefieres pasar el tiempo con tu novia o novio?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p19"> Conversando
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p19"> Acariciándose
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p19"> Mirando algo juntos
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 20-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>20.- Si no encuentras las llaves en una bolsa</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p20"> La buscas mirando
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p20"> Sacudes la bolsa para oír el ruido
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p20"> Buscas al tacto
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 21-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>21.- Si tuvieras dinero, ¿qué harías?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p21"> Comprar una casa
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p21"> Viajar y conocer el mundo
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p21"> Adquirir un estudio de grabación
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 22-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>22.- ¿Con qué frase te identificas más?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p22"> Reconozco a las personas por su voz
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p22"> No recuerdo el aspecto de la gente
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p22"> Recuerdo el aspecto de alguien, pero no su nombre
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 23-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>23.- Si tuvieras que quedarte en una isla desierta, ¿qué preferirías llevar contigo?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p23"> Algunos buenos libros
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p23"> Un radio portátil de alta frecuencia
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p23"> Golosinas y comida enlatada
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 24-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>24.- ¿Cuál de los siguientes entretenimientos prefieres?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p24"> Tocar un instrumento musical
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p24"> Sacar fotografías
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p24"> Actividades manuales
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 25-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>25.- ¿Cómo es tu forma de vestir?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p25"> Impecable
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p25"> Informal
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p25"> Muy informal
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 26-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>26.- ¿Qué es lo que más te gusta de una fogata nocturna?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p26"> El calor del fuego y los bombones asados
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p26"> El sonido del fuego quemando la leña
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p26"> Mirar el fuego y las estrellas
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 27-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>27.- ¿Cómo se te facilita entender algo?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p27"> Cuando te lo explican verbalmente
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p27"> Cuando utilizan medios visuales
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p27"> Cuando se realiza a través de alguna actividad
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 28-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>28.- ¿Por qué te distingues?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p28"> Por tener una gran intuición
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p28"> Por ser un buen conversador
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p28"> Por ser un buen observador
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 29-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>29.- ¿Qué es lo que más disfrutas de un amanecer?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p29"> La emoción de vivir un nuevo día
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p29"> Las tonalidades del cielo
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p29"> El canto de las aves
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 30-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>30.- Si pudieras elegir ¿qué preferirías ser?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p30"> Un gran médico
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p30"> Un gran músico
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p30"> Un gran pintor
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 31-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>31.- Cuando eliges tu ropa, ¿qué es lo más importante para ti?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p31"> Que sea adecuada
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p31"> Que luzca bien
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p31"> Que sea cómoda
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 32-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>32.- ¿Qué es lo que más disfrutas de una habitación?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p32"> Que sea silenciosa
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p32"> Que sea confortable
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p32"> Que esté limpia y ordenada
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 33-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>33.- ¿Qué es más sexy para ti?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p33"> Una iluminación tenue
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p33"> El perfume
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p33"> Cierto tipo de música
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 34-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>34.- ¿A qué tipo de espectáculo preferirías asistir?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p34"> A un concierto de música
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p34"> A un espectáculo de magia
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p34"> A una muestra gastronómica
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 35-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>35.- ¿Qué te atrae más de una persona?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p35"> Su trato y forma de ser
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p35"> Su aspecto físico
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p35"> Su conversación
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 36-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>36.- Cuando vas de compras, ¿en dónde pasas mucho tiempo?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p36"> En una librería
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p36"> En una perfumería
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p36"> En una tienda de discos
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 37-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>37.- ¿Cuáles tu idea de una noche romántica?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p37"> A la luz de las velas
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p37"> Con música romántica
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p37"> Bailando tranquilamente
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 38-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>38.- ¿Qué es lo que más disfrutas de viajar?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p38"> Conocer personas y hacer nuevos amigos
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p38"> Conocer lugares nuevos
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p38"> Aprender sobre otras costumbres
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 39-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>39.- Cuando estás en la ciudad, ¿qué es lo que más hechas de menos del campo?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p39"> El aire limpio y refrescante
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p39"> Los paisajes
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p39"> La tranquilidad
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--NOTE PREGUNTA 40-->
+                    <div class="card mb-3 shadow">
+                        <header class="card-header">
+                            <h2>40.- Si te ofrecieran uno de los siguientes empleos, ¿cuál elegirías?</h2>
+                        </header>
+                        <div class="card-body">
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="auditivo" name="p40"> Director de una estación de radio
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="cinestesico" name="p40"> Director de un club deportivo
+                            </label>
+                            <label class="d-block p-1 ">
+                                <input type="radio" value="visual" name="p40"> Director de una revista
+                            </label>
+                        </div>
+                    </div>
+
+    
+                    <div class="d-flex gap-3 mb-5">
+    
+                        <button type="submit" class="btn btn-success fs-4">ENVIAR ENCUESTA</button>
+                        <a id="showResult" href="/cuenta" class="btn btn-outline-dark fs-4 disabled">VER RESULTADOS</a>
+                    </div>
+                </form>
+
+
+            </main>
+
+
+        <script src="./js/test1.js"></script>
+    </body>
+
+</html>

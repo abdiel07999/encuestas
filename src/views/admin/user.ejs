@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../helpers/head.ejs') %>
+<body class="">
+    <%- include('../helpers/navbar_admin.ejs') %>
+
+
+    <main class="container mt-5">
+        <h1 class="display-2">Paciente: <%=user.nombre_usuario%></h1>
+        <p><b class="text-uppercase">Correo Electronico:</b> <%=user.correo_electronico%></p>
+    </main>
+    <hr>
+    
+    <section class="my-3 container">
+        <section class="row">
+
+            <article class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        Tipo de Aprendizaje (Modelo TDH)
+                    </div>
+                    <canvas id="doughnutChart"></canvas>
+                    <div class="card-footer">
+                        <h3 class="text-center text-uppercase"><%=user.resultado_final%></h3>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        Honey-Alonso de Estilos de Aprendizaje
+                    </div>
+                    <canvas id="doughnutChart1"></canvas>
+                    <div class="card-footer">
+                        <h3 class="text-center text-uppercase">No disponible</h3>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        Canal de Aprendizaje de Preferencia de Lynn O'Brien
+                    </div>
+                    <canvas id="doughnutChart2"></canvas>
+                    <div class="card-footer">
+                        <h3 class="text-center text-uppercase">No disponible</h3>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const data = {
+            'Auditivo': <%=data.auditivo%>,
+            'Visual': <%=data.visual%>,
+            'Cinestesico': <%=data.cinestesico%>,
+          }
+
+          const data1 = {
+            'No disponible' : 0
+          }
+
+          const data2 = {
+            'No disponible' : 0
+          }
+    
+          const ctx = document.getElementById('doughnutChart').getContext('2d');
+          const ctx1 = document.getElementById('doughnutChart1').getContext('2d');
+          const ctx2 = document.getElementById('doughnutChart2').getContext('2d');
+          
+          const doughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+              labels: Object.keys(data),
+              datasets: [{
+                data: Object.values(data),
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+                hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+              }]
+            }
+          });
+
+          const doughnutChart1 = new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+              labels: Object.keys(data1),
+              datasets: [{
+                data: Object.values(data1),
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+                hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+              }]
+            }
+          });
+
+          const doughnutChart2 = new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+              labels: Object.keys(data2),
+              datasets: [{
+                data: Object.values(data2),
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+                hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+              }]
+            }
+          });
+
+        });
+        doughnutChart()
+      </script>
+</body>
+</html>

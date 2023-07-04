@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../helpers/head.ejs') %>
+
+    <body class="">
+        <%- include('../helpers/navbar_admin.ejs') %>
+
+            <main class="container card mt-5 py-4">
+
+                <h1 class="display-1">Lista de Pacientes</h1>
+                <p>Usuarios registrados en la base de datos <span class="badge bg-primary rounded-pill"><%=users.length%></span></p>
+
+                <ul class="list-group">
+                    <% users.forEach(e => { %>
+                        <a href="/usuario/<%=e.id_usuario%>" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"><%=e.nombre_usuario%></h5>
+                                <small class="text-body-secondary">Click para ver</small>
+                            </div>
+                            <p class="mb-1">Tipo de Aprendizaje: <%=e.resultado_final%></p>
+                            <small class="text-body-secondary"><%=e.correo_electronico%></small>
+                        </a>
+                    <% }); %>
+                </ul>
+            </main>
+
+    </body>
+
+</html>

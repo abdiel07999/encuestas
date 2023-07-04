@@ -1,39 +1,26 @@
--- Active: 1684178392201@@127.0.0.1@3306
-CREATE DATABASE encuestas
-    DEFAULT CHARACTER SET = 'utf8mb4';
+CREATE DATABASE encuestas;
 
 USE encuestas;
 
--- Tabla "Usuarios"
-CREATE TABLE Usuarios (
+CREATE TABLE usuarios (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
     nombre_usuario VARCHAR(255),
     contraseña VARCHAR(255),
     correo_electronico VARCHAR(255)
 );
 
--- Tabla "Encuestas"
-CREATE TABLE Encuestas (
-    id_encuesta INT PRIMARY KEY AUTO_INCREMENT,
-    titulo_encuesta VARCHAR(255),
-    descripcion_encuesta VARCHAR(255),
-    id_usuario INT,
-    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario)
+CREATE TABLE test_1(
+    id_test INT(2) AUTO_INCREMENT PRIMARY KEY, 
+    id_usuario INT(2) NOT NULL,
+    resultado_final VARCHAR(35) NOT NULL,
+    puntos INT(2) NOT NULL,
+    visual INT(4) NOT NULL,
+    cinestisico INT(4) NOT NULL,
+    auditivo INT(4) NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 );
 
--- Tabla "Preguntas"
-CREATE TABLE Preguntas (
-    id_pregunta INT PRIMARY KEY AUTO_INCREMENT,
-    texto_pregunta VARCHAR(255),
-    tipo_respuesta INT,
-    id_encuesta INT,
-    FOREIGN KEY (id_encuesta) REFERENCES Encuestas(id_encuesta)
-);
-
--- Tabla "Respuestas"
-CREATE TABLE Respuestas (
-    id_respuesta INT PRIMARY KEY AUTO_INCREMENT,
-    texto_respuesta VARCHAR(255),
-    id_pregunta INT,
-    FOREIGN KEY (id_pregunta) REFERENCES Preguntas(id_pregunta)
-);
+CREATE VIEW users_view_complete AS
+SELECT * FROM usuarios INNER JOIN test_1 ON usuarios.id_usuario = test_1.id_usuario;

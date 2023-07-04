@@ -2,8 +2,8 @@
 
 ## Variables de entorno
 
-- DB_HOST = mysql-danieldlr.alwaysdata.net
-- DB_NAME = danieldlr_graficos
-- DB_USER = danieldlr
-- DB_PASS = x/C?6sVn8+F,9>v3
+- DB_HOST = localhost
+- DB_NAME = encuestas
+- DB_USER = root
+- DB_PASS = 
 - JWT_SECRET = secret
